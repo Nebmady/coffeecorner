@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- icon and tittle name -->
+    <link rel="icon" href="image/cafelogo.png">
+    <title>Coffee Corner</title>
+    <!-- link go to CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="image/logo.png" alt="" width="60" height="40" class="me-2 rounded-circle">
+                <span>Coffee Corner</span> 
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">&nbsp&nbsp Home &nbsp&nbsp</a></li>
+                    <li class="nav-item"><a class="nav-link" href="promotion.html">&nbsp&nbspPromotion &nbsp&nbsp</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="menu.html">&nbsp&nbsp Menu &nbsp&nbsp</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">&nbsp&nbsp About Us &nbsp&nbsp</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">&nbsp&nbsp Contact &nbsp&nbsp</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- Hero image with text -->
+    <header class="menu-hero-section text-center text-white d-flex align-items-center">
+        <!-- class overlay : dak oy img hero ng reang blur por -->
+        <div class="overlay"></div>
+        <div class="container position-relative">
+            <h1 class="fw-bold">Our Menu</h1>
+            <p>Discover our carefully crafted selection of premium drinks and delicious treats</p>
+        </div>
+    </header>
+
+
+
+    <!-- button select menu -->
+    <section class="menu-section py-5">
+        <div class="container">
+            <div class="d-flex justify-content-center">
+                <div class="outline-buttons d-flex rounded-pill">
+                    <button type="button" class="btn-outline active" href="menu.html" onclick="switchTab('section1')">All</button>
+                    <button type="button" class="btn-outline" href="menucoffee.html" onclick="switchTab('section2')">Coffee</button>
+                    <button type="button" class="btn-outline" href="menutea.html" onclick="switchTab('section3')">Tea</button>
+                    <button type="button" class="btn-outline" href="menudessert.html" onclick="switchTab('section4')">Dessert</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Section 1: All Menu Production Show -->
+     <section  id="section1" class="promotions-grid py-5 bg-cream tab-section active">
+        <div class="container">
+            <!-- row ti 1 -->
+            <div class="row g-4 mb-4">
+                <!-- Promo Card 1 -->
+                <div class="col-md-4 ">
+                    <div class="promo-card">
+                        <div class="promo-img-wrapper">
+                            <img src="image/coffee1.jpg" class="img-fluid" alt="Happy Hour Special">
+                            <span class="badge-promo2">Best Seller</span>
+                        </div>
+                        <div class="promo-content px-3 pt-3">
+                            <h4>Classic Espresso</h4>
+                            <p>Rich and bold single or double shot</p>
+                        </div>
+                        <div class="justify-content-center align-items-center px-5 pb-3">
+                            <div class="menu-card text-white align-items-center justify-content-center d-flex rounded">
+                                <span class="fw-medium py-1 fs-6">$3.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Promo Card 2 -->
+                <div class="col-md-4">
+                    <div class="promo-card">
+                        <div class="promo-img-wrapper">
+                            <img src="image/iced_latte.jpg" class="img-fluid" alt="Student Deal">
+                            <span class="badge-promo2">Best Seller</span>
+                        </div>
+                        <div class="promo-content px-3 pt-3">
+                            <h4>Iced Coffee</h4>
+                            <p>Refreshing cold brew over ice with milk</p>
+                        </div>
+                        <div class="justify-content-center align-items-center px-5 pb-3">
+                            <div class="menu-card text-white align-items-center justify-content-center d-flex rounded">
+                                <span class="fw-medium py-1 fs-6">$3.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Promo Card 3 -->
+                <div class="col-md-4">
+                    <div class="promo-card">
+                        <div class="promo-img-wrapper">
+                            <img src="image/coffee2.jpg" class="img-fluid" alt="Weekend Combo">
+                            <span class="badge-promo2">Best Seller</span>
+                        </div>
+                        <div class="promo-content px-3 pt-3">
+                            <h4>Cappuccino</h4>
+                            <p>Perfect balance of espresso and foamed milk</p>
+                        </div>
+                        <div class="justify-content-center align-items-center px-5 pb-3">
+                            <div class="menu-card text-white align-items-center justify-content-center d-flex rounded">
+                                <span class="fw-medium py-1 fs-6">$3.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+            <!-- row ti 2 -->
+            <div class="row g-4 mb-4">
+                <!-- Promo Card 1 -->
+                <div class="col-md-4 ">
+                    <div class="promo-card">
+                        <div class="promo-img-wrapper">
+                            <img src="image/cafe2.jpg" class="img-fluid" alt="Happy Hour Special">
+                        </div>
+                        <div class="promo-content px-3 pt-3">
+                            <h4>Mocha Delight</h4>
+                            <p>Espresso with chocolate and whipped cream</p>
+                        </div>
+                        <div class="justify-content-center align-items-center px-5 pb-3">
+                            <div class="menu-card text-white align-items-center justify-content-center d-flex rounded">
+                                <span class="fw-medium py-1 fs-6">$3.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Promo Card 2 -->
+                <div class="col-md-4">
+                    <div class="promo-card">
+                        <div class="promo-img-wrapper">
+                            <img src="image/cafe3.jpg" class="img-fluid" alt="Student Deal">
+                        </div>
+                        <div class="promo-content px-3 pt-3">
+                            <h4>Americano</h4>
+                            <p>Classic espresso with hot water</p>
+                        </div>
+                        <div class="justify-content-center align-items-center px-5 pb-3">
+                            <div class="menu-card text-white align-items-center justify-content-center d-flex rounded">
+                                <span class="fw-medium py-1 fs-6">$3.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Promo Card 3 -->
+                <div class="col-md-4">
+                    <div class="promo-card">
+                        <div class="promo-img-wrapper">
+                            <img src="image/cafe4.jpg" class="img-fluid" alt="Weekend Combo">
+                        </div>
+                        <div class="promo-content px-3 pt-3">
+                            <h4>Caramel Macchiato</h4>
+                            <p>Sweet espresso with vanilla and caramel</p>
+                        </div>
+                        <div class="justify-content-center align-items-center px-5 pb-3">
+                            <div class="menu-card text-white align-items-center justify-content-center d-flex rounded">
+                                <span class="fw-medium py-1 fs-6">$3.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+            <!-- row ti 3 -->
+            <div class="row g-4 mb-4">
+                <!-- Promo Card 1 -->
+                <div class="col-md-4 ">
+                    <div class="promo-card">
+                        <div class="promo-img-wrapper">
+                            <img src="image/Chamomile Blend.webp" class="img-fluid" alt="Happy Hour Special">
+                        </div>
+                        <div class="promo-content px-3 pt-3">
+                            <h4>Chamomile Blend</h4>
+                            <p>Calming herbal infusion</p>
+                        </div>
+                        <div class="justify-content-center align-items-center px-5 pb-3">
+                            <div class="menu-card text-white align-items-center justify-content-center d-flex rounded">
+                                <span class="fw-medium py-1 fs-6">$3.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Promo Card 2 -->
+                <div class="col-md-4">
+                    <div class="promo-card">
+                        <div class="promo-img-wrapper">
+                            <img src="image/tea2.jpg" class="img-fluid" alt="Student Deal">
+                        </div>
+                        <div class="promo-content px-3 pt-3">
+                            <h4>Green Tea</h4>
+                            <p>Premium Japanese green tea with delicate flavor</p>
+                        </div>
+                        <div class="justify-content-center align-items-center px-5 pb-3">
+                            <div class="menu-card text-white align-items-center justify-content-center d-flex rounded">
+                                <span class="fw-medium py-1 fs-6">$3.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Promo Card 3 -->
+                <div class="col-md-4">
+                    <div class="promo-card">
+                        <div class="promo-img-wrapper">
+                            <img src="image/match_latte.jpg" class="img-fluid" alt="Weekend Combo">
+                        </div>
+                        <div class="promo-content px-3 pt-3">
+                            <h4>Matcha Latte</h4>
+                            <p>Japanese green tea with steamed milk</p>
+                        </div>
+                        <div class="justify-content-center align-items-center px-5 pb-3">
+                            <div class="menu-card text-white align-items-center justify-content-center d-flex rounded">
+                                <span class="fw-medium py-1 fs-6">$3.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="container">
+            <!-- row ti 4 -->
+            <div class="row g-4 mb-4">
+                <!-- Promo Card 1 -->
+                <div class="col-md-4 ">
+                    <div class="promo-card">
+                        <div class="promo-img-wrapper">
+                            <img src="image/earl_gray_tea.webp" class="img-fluid" alt="Happy Hour Special">
+                        </div>
+                        <div class="promo-content px-3 pt-3">
+                            <h4>Earl Grey</h4>
+                            <p>Classic bergamot-scented black tea</p>
+                        </div>
+                        <div class="justify-content-center align-items-center px-5 pb-3">
+                            <div class="menu-card text-white align-items-center justify-content-center d-flex rounded">
+                                <span class="fw-medium py-1 fs-6">$3.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Promo Card 2 -->
+                <div class="col-md-4">
+                    <div class="promo-card">
+                        <div class="promo-img-wrapper">
+                            <img src="image/iced_tea.webp" class="img-fluid" alt="Student Deal">
+                        </div>
+                        <div class="promo-content px-3 pt-3">
+                            <h4>Iced Lavender Latte</h4>
+                            <p>Spring special with floral notes</p>
+                        </div>
+                        <div class="justify-content-center align-items-center px-5 pb-3">
+                            <div class="menu-card text-white align-items-center justify-content-center d-flex rounded">
+                                <span class="fw-medium py-1 fs-6">$3.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 ">
+                    <div class="promo-card">
+                        <div class="promo-img-wrapper">
+                            <img src="image/croissant.jpg" class="img-fluid" alt="Happy Hour Special">
+                        </div>
+                        <div class="promo-content px-3 pt-3">
+                            <h4>Chocolate Croissant</h4>
+                            <p>Rich, moist chocolate cake with ganache frosting</p>
+                        </div>
+                        <div class="justify-content-center align-items-center px-5 pb-3">
+                            <div class="menu-card text-white align-items-center justify-content-center d-flex rounded">
+                                <span class="fw-medium py-1 fs-6">$3.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+          <!-- row ti 5 -->
+            <div class="row g-4 mb-4">
+                <!-- Promo Card 2 -->
+                <div class="col-md-4">
+                    <div class="promo-card">
+                        <div class="promo-img-wrapper">
+                            <img src="image/muffin.webp" class="img-fluid" alt="Student Deal">
+                        </div>
+                        <div class="promo-content px-3 pt-3">
+                            <h4>Blueberry Muffin</h4>
+                            <p>Fresh-baked with real blueberries</p>
+                        </div>
+                        <div class="justify-content-center align-items-center px-5 pb-3">
+                            <div class="menu-card text-white align-items-center justify-content-center d-flex rounded">
+                                <span class="fw-medium py-1 fs-6">$3.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Promo Card 3 -->
+                <div class="col-md-4">
+                    <div class="promo-card">
+                        <div class="promo-img-wrapper">
+                            <img src="image/tiramisu.jpg" class="img-fluid" alt="Weekend Combo">
+                        </div>
+                        <div class="promo-content px-3 pt-3">
+                            <h4>Tiramisu</h4>
+                            <p>Coffee-soaked ladyfingers with mascarpone</p>
+                        </div>
+                        <div class="justify-content-center align-items-center px-5 pb-3">
+                            <div class="menu-card text-white align-items-center justify-content-center d-flex rounded">
+                                <span class="fw-medium py-1 fs-6">$3.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 ">
+                    <div class="promo-card">
+                        <div class="promo-img-wrapper">
+                            <img src="image/chocolate_cake.jpg" class="img-fluid" alt="Happy Hour Special">
+                        </div>
+                        <div class="promo-content px-3 pt-3">
+                            <h4>Chocolate Cake</h4>
+                            <p>Rich, moist chocolate cake with ganache frosting</p>
+                        </div>
+                        <div class="justify-content-center align-items-center px-5 pb-3">
+                            <div class="menu-card text-white align-items-center justify-content-center d-flex rounded">
+                                <span class="fw-medium py-1 fs-6">$3.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    <!-- webpage: Coffee Menu Production Show -->
+     <section  id="section2" class="promotions-grid py-5 bg-cream tab-section">
+        <div class="container">
+           <!-- row 1 -->
+            <div class="row g-4 mb-4">
+                <!-- Promo Card 1 -->
+                <div class="col-md-4 ">
+                    <div class="promo-card">
+                        <div class="promo-img-wrapper">
+                            <img src="image/coffee1.jpg" class="img-fluid" alt="Happy Hour Special">
+                        </div>
+                        <div class="promo-content px-3 pt-3">
+                            <h4>Classic Espresso</h4>
+                            <p>Rich and bold single or double shot</p>
+                        </div>
+                        <div class="justify-content-center align-items-center px-5 pb-3">
+                            <div class="menu-card text-white align-items-center justify-content-center d-flex rounded">
+                                <span class="fw-medium py-1 fs-6">$3.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Promo Card 2 -->
+                <div class="col-md-4">
+                    <div class="promo-card">
+                        <div class="promo-img-wrapper">
+                            <img src="image/iced_latte.jpg" class="img-fluid" alt="Student Deal">
+                        </div>
+                        <div class="promo-content px-3 pt-3">
+                            <h4>Iced Coffee</h4>
+                            <p>Refreshing cold brew over ice with milk</p>
+                        </div>
+                        <div class="justify-content-center align-items-center px-5 pb-3">
+                            <div class="menu-card text-white align-items-center justify-content-center d-flex rounded">
+                                <span class="fw-medium py-1 fs-6">$3.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Promo Card 3 -->
+                <div class="col-md-4">
+                    <div class="promo-card">
+                        <div class="promo-img-wrapper">
+                            <img src="image/coffee2.jpg" class="img-fluid" alt="Weekend Combo">
+                        </div>
+                        <div class="promo-content px-3 pt-3">
+                            <h4>Cappuccino</h4>
+                            <p>Perfect balance of espresso and foamed milk</p>
+                        </div>
+                        <div class="justify-content-center align-items-center px-5 pb-3">
+                            <div class="menu-card text-white align-items-center justify-content-center d-flex rounded">
+                                <span class="fw-medium py-1 fs-6">$3.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+            <!-- row 2 -->
+            <div class="row g-4 mb-4">
+                <!-- Promo Card 1 -->
+                <div class="col-md-4 ">
+                    <div class="promo-card">
+                        <div class="promo-img-wrapper">
+                            <img src="image/cafe2.jpg" class="img-fluid" alt="Happy Hour Special">
+                        </div>
+                        <div class="promo-content px-3 pt-3">
+                            <h4>Mocha Delight</h4>
+                            <p>Espresso with chocolate and whipped cream</p>
+                        </div>
+                        <div class="justify-content-center align-items-center px-5 pb-3">
+                            <div class="menu-card text-white align-items-center justify-content-center d-flex rounded">
+                                <span class="fw-medium py-1 fs-6">$3.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Promo Card 2 -->
+                <div class="col-md-4">
+                    <div class="promo-card">
+                        <div class="promo-img-wrapper">
+                            <img src="image/cafe3.jpg" class="img-fluid" alt="Student Deal">
+                        </div>
+                        <div class="promo-content px-3 pt-3">
+                            <h4>Americano</h4>
+                            <p>Classic espresso with hot water</p>
+                        </div>
+                        <div class="justify-content-center align-items-center px-5 pb-3">
+                            <div class="menu-card text-white align-items-center justify-content-center d-flex rounded">
+                                <span class="fw-medium py-1 fs-6">$3.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Promo Card 3 -->
+                <div class="col-md-4">
+                    <div class="promo-card">
+                        <div class="promo-img-wrapper">
+                            <img src="image/cafe4.jpg" class="img-fluid" alt="Weekend Combo">
+                        </div>
+                        <div class="promo-content px-3 pt-3">
+                            <h4>Caramel Macchiato</h4>
+                            <p>Sweet espresso with vanilla and caramel</p>
+                        </div>
+                        <div class="justify-content-center align-items-center px-5 pb-3">
+                            <div class="menu-card text-white align-items-center justify-content-center d-flex rounded">
+                                <span class="fw-medium py-1 fs-6">$3.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- webpage: Tea Menu  -->
+     <section  id="section3" class="promotions-grid py-5 bg-cream tab-section">
+        <div class="container">
+            <!-- row 1 -->
+            <div class="row g-4 mb-4">
+                <!-- Promo Card 1 -->
+                <div class="col-md-4 ">
+                    <div class="promo-card">
+                        <div class="promo-img-wrapper">
+                            <img src="image/Chamomile Blend.webp" class="img-fluid" alt="Happy Hour Special">
+                        </div>
+                        <div class="promo-content px-3 pt-3">
+                            <h4>Chamomile Blend</h4>
+                            <p>Calming herbal infusion</p>
+                        </div>
+                        <div class="justify-content-center align-items-center px-5 pb-3">
+                            <div class="menu-card text-white align-items-center justify-content-center d-flex rounded">
+                                <span class="fw-medium py-1 fs-6">$3.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Promo Card 2 -->
+                <div class="col-md-4">
+                    <div class="promo-card">
+                        <div class="promo-img-wrapper">
+                            <img src="image/tea2.jpg" class="img-fluid" alt="Student Deal">
+                        </div>
+                        <div class="promo-content px-3 pt-3">
+                            <h4>Green Tea</h4>
+                            <p>Premium Japanese green tea with delicate flavor</p>
+                        </div>
+                        <div class="justify-content-center align-items-center px-5 pb-3">
+                            <div class="menu-card text-white align-items-center justify-content-center d-flex rounded">
+                                <span class="fw-medium py-1 fs-6">$3.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Promo Card 3 -->
+                <div class="col-md-4">
+                    <div class="promo-card">
+                        <div class="promo-img-wrapper">
+                            <img src="image/match_latte.jpg" class="img-fluid" alt="Weekend Combo">
+                        </div>
+                        <div class="promo-content px-3 pt-3">
+                            <h4>Matcha Latte</h4>
+                            <p>Japanese green tea with steamed milk</p>
+                        </div>
+                        <div class="justify-content-center align-items-center px-5 pb-3">
+                            <div class="menu-card text-white align-items-center justify-content-center d-flex rounded">
+                                <span class="fw-medium py-1 fs-6">$3.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="container">
+            <!-- row 2 -->
+            <div class="row g-4 mb-4">
+                <!-- Promo Card 1 -->
+                <div class="col-md-4 ">
+                    <div class="promo-card">
+                        <div class="promo-img-wrapper">
+                            <img src="image/earl_gray_tea.webp" class="img-fluid" alt="Happy Hour Special">
+                        </div>
+                        <div class="promo-content px-3 pt-3">
+                            <h4>Earl Grey</h4>
+                            <p>Classic bergamot-scented black tea</p>
+                        </div>
+                        <div class="justify-content-center align-items-center px-5 pb-3">
+                            <div class="menu-card text-white align-items-center justify-content-center d-flex rounded">
+                                <span class="fw-medium py-1 fs-6">$3.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Promo Card 2 -->
+                <div class="col-md-4">
+                    <div class="promo-card">
+                        <div class="promo-img-wrapper">
+                            <img src="image/iced_tea.webp" class="img-fluid" alt="Student Deal">
+                        </div>
+                        <div class="promo-content px-3 pt-3">
+                            <h4>Iced Lavender Latte</h4>
+                            <p>Spring special with floral notes</p>
+                        </div>
+                        <div class="justify-content-center align-items-center px-5 pb-3">
+                            <div class="menu-card text-white align-items-center justify-content-center d-flex rounded">
+                                <span class="fw-medium py-1 fs-6">$3.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- webpage: Dessert Menu Production-->
+     <section  id="section4" class="promotions-grid py-5 bg-cream tab-section">
+        <div class="container">
+            <!-- row 1 -->
+            <div class="row g-4 mb-4">
+                <!-- Promo Card 1 -->
+                <div class="col-md-4 ">
+                    <div class="promo-card">
+                        <div class="promo-img-wrapper">
+                            <img src="image/croissant.jpg" class="img-fluid" alt="Happy Hour Special">
+                        </div>
+                        <div class="promo-content px-3 pt-3">
+                            <h4>Chocolate Croissant</h4>
+                            <p>Rich, moist chocolate cake with ganache frosting</p>
+                        </div>
+                        <div class="justify-content-center align-items-center px-5 pb-3">
+                            <div class="menu-card text-white align-items-center justify-content-center d-flex rounded">
+                                <span class="fw-medium py-1 fs-6">$3.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Promo Card 2 -->
+                <div class="col-md-4">
+                    <div class="promo-card">
+                        <div class="promo-img-wrapper">
+                            <img src="image/muffin.webp" class="img-fluid" alt="Student Deal">
+                        </div>
+                        <div class="promo-content px-3 pt-3">
+                            <h4>Blueberry Muffin</h4>
+                            <p>Fresh-baked with real blueberries</p>
+                        </div>
+                        <div class="justify-content-center align-items-center px-5 pb-3">
+                            <div class="menu-card text-white align-items-center justify-content-center d-flex rounded">
+                                <span class="fw-medium py-1 fs-6">$3.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Promo Card 3 -->
+                <div class="col-md-4">
+                    <div class="promo-card">
+                        <div class="promo-img-wrapper">
+                            <img src="image/tiramisu.jpg" class="img-fluid" alt="Weekend Combo">
+                        </div>
+                        <div class="promo-content px-3 pt-3">
+                            <h4>Tiramisu</h4>
+                            <p>Coffee-soaked ladyfingers with mascarpone</p>
+                        </div>
+                        <div class="justify-content-center align-items-center px-5 pb-3">
+                            <div class="menu-card text-white align-items-center justify-content-center d-flex rounded">
+                                <span class="fw-medium py-1 fs-6">$3.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row g-4 mb-4">
+                <!-- row 2 one card -->
+                <div class="col-md-4 ">
+                    <div class="promo-card">
+                        <div class="promo-img-wrapper">
+                            <img src="image/chocolate_cake.jpg" class="img-fluid" alt="Happy Hour Special">
+                        </div>
+                        <div class="promo-content px-3 pt-3">
+                            <h4>Chocolate Cake</h4>
+                            <p>Rich, moist chocolate cake with ganache frosting</p>
+                        </div>
+                        <div class="justify-content-center align-items-center px-5 pb-3">
+                            <div class="menu-card text-white align-items-center justify-content-center d-flex rounded">
+                                <span class="fw-medium py-1 fs-6">$3.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+ <!-- Footer Section -->
+    <footer class="footer py-5 text-white">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5>Coffee Corner</h5>
+                    <p>Your perfect spot for freshly brewed coffee, cozy atmosphere, and delicious treats.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="promotion.html">Promotions</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Connect With Us</h5>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

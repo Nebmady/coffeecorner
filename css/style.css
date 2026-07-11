@@ -1,0 +1,1081 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FAF7F2;
+}
+
+/* ============= Custom Navbar Colors =============== */
+.custom-navbar {
+    background-color: #8C5A3C !important;
+    padding: 15px;
+}
+
+.custom-navbar .nav-link {
+    color: #FFFFFF !important;
+    font-weight: 500;
+    padding: 8px 20px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    margin-left: 5px;
+}
+
+.custom-navbar .nav-link:hover {
+    color: #C08552 !important;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* ===== ACTIVE LINK – Button/Pill Style ===== */
+.custom-navbar .nav-link.active {
+    color: #C08552 !important;
+    background-color: #F3E9DC !important;
+    border-radius: 50px;
+    padding: 8px 20px;
+    box-shadow: 0 4px 12px rgba(192, 133, 82, 0.4);
+}
+
+.custom-navbar .nav-link.active:hover {
+    color: #FFFFFF !important;
+    background-color: #A56D42 !important;
+}
+
+.menu-card {
+    background-color: #B3977E !important;
+}
+
+/* ===== EXTRA SPACING ON DESKTOP ===== */
+/* ============= Hero =============== */
+.hero-section {
+    height: 80vh;
+    background: url('../image/hero.png') no-repeat center center/cover;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+.hero-buttons{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+.btn-menu{
+    background-color:#C08552;
+    color: white;
+    text-decoration: none;
+    padding: 10px 35px;
+    border-radius: 50px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+.btn-menu:hover{
+    background-color: #A56D42;
+    color: white;
+}
+.btn-reserve{
+    background-color: white;
+    color: #C08552;
+    text-decoration: none;
+    padding: 10px 35px;
+    border-radius: 50px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: 0.3s;
+}
+.btn-reserve i{
+    font-size: 22px;
+}
+.btn-reserve:hover{
+    background-color:  #C08552;
+    color: white;
+}
+
+/* ================ Features Section ===================== */
+.feature-card {
+    background: #F3E9DC;
+    border-radius: 20px;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    height: 100%;
+}
+
+.feature-card2 {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    height: 100%;
+}
+
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.icon-circle {
+    width: 60px;
+    height: 60px;
+    background: #C08552;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.feature-card h4 {
+    color: black;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    color: #7C7676;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* Custom button */
+.feature-btn {
+    display: inline-block;
+    background: #C08552;
+    color: white;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.feature-btn:hover {
+    background: #A56D42;
+    color: white;
+}
+
+
+/* ============================= Special Promotions Section ======================= */
+
+.section-title {
+    font-weight: bold;
+    color: #333;
+}
+
+.promo-card {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    height: 100%;
+}
+
+.promo-img-wrapper {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.promo-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.badge-promo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #B3977E;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+}
+
+.badge-promo2 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #FFC107;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    font-weight: 500
+}
+
+/* ======================= Footer ============================ */
+.footer {
+    background-color: #8C5A3C;
+}
+
+.footer h5 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #C08552;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 24px;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #C08552;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 60vh;
+    }
+    
+    .display-3 {
+        font-size: 1.6rem;
+    }
+}
+
+
+/* web page : Promotion ======================================================================= */
+.promotion-section {
+    background-color: #F3E9DC;
+}
+.promo-hero-section {
+    height: 50vh;
+    background: url('../image/promohero.jpg') no-repeat center center/cover;
+    position: relative;
+}
+
+.promo-hero-section .overlay {
+    background-color: rgba(139, 90, 60, 0.6); 
+}
+
+.promo-card p{
+    color: #7C7676;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+
+/* web page : Menu ======================================================================= */
+.menu-hero-section {
+    height: 50vh;
+    background: url('../image/menuhero.jpg') no-repeat center center/cover;
+    position: relative;
+}
+
+.promo-hero-section .overlay {
+    background-color: rgba(139, 90, 60, 0.6); 
+}
+
+/* <!-- button select menu --> */
+.outline-buttons{
+    background-color: #F3E9DC;
+    border-radius: 50px;
+    padding: 10px;
+    max-width: 700px;
+    width: 100%;
+}
+
+.btn-outline{
+    flex: 1;
+    border: none;
+    background: transparent;
+    color: #222;
+    font-size: 19px;
+    padding: 10px 20px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-outline.active{
+    background-color: #C08552;
+    color: white;
+    border-radius: 80px;
+}
+
+.tab-section {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.tab-section.active {
+    display: block;
+}
+
+/* ===== About‑page‑specific tweaks ===== */
+.about-hero {
+    height: 60vh;
+    background: url('../image/about_bg_img.png') no-repeat center center/cover;
+    position: relative;
+}
+
+.about-hero .overlay {
+    background-color: rgba(139, 90, 60, 0.6);
+}
+
+.about-bg{
+    background-color: #F3E9DC;
+}
+
+.team-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #C08552;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    overflow: hidden;           /* ensures image stays inside circle */
+    flex-shrink: 0;             /* prevents shrinking in flex layouts */
+}
+
+.team-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;          /* crops image to fill circle cleanly */
+    display: block;
+}
+
+/* fallback text initials when no image is used */
+.team-avatar .initials {
+    font-size: 28px;
+    font-weight: 600;
+    color: white;
+}
+
+.testimonial-card blockquote {
+    font-style: italic;
+    color: #3d322b;
+    font-weight: 300;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+.testimonial-card .customer {
+    font-weight: 600;
+    color: #8C5A3C;
+    margin-top: 8px;
+}
+
+/* card page about */
+
+.testimonial-card {
+    background: white;
+    border-radius: 20px;
+    padding: 25px 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+    transition: 0.25s;
+    height: 100%;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.testimonial-card .customer-name {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #2c2420;
+    margin-bottom: 2px;
+}
+
+.testimonial-card .stars {
+    color: #C08552;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+.stat-number {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #000000;
+    line-height: 1.2;
+}
+
+.stat-label {
+    color: #5f4d3f;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.stats-grid {
+    background: #ffffff;
+    border-radius: 1.5rem;
+    padding: 2rem 1.5rem;
+}
+
+@media (max-width: 576px) {
+    .stat-number {
+        font-size: 2rem;
+    }
+}
+
+/* ===== Contact‑page specific ===== */
+.contact-hero {
+    height: 50vh;
+    background: url('../image/contactus.png') no-repeat center center/cover;
+    position: relative;
+}
+
+.contact-hero .overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.contact-info-card {
+    background: white;
+    border-radius: 20px;
+    padding: 30px 25px;
+    height: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+    transition: 0.3s;
+    text-align: center;
+}
+
+.contact-info-card:hover {
+    transform: translateY(-5px);
+}
+
+.contact-icon-lg {
+    width: 70px;
+    height: 70px;
+    background: #C08552;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    margin: 0 auto 15px auto;
+}
+
+.contact-info-card h5 {
+    font-weight: 600;
+    color: #2c2420;
+}
+
+.contact-info-card p {
+    color: #5f4d3f;
+    margin-bottom: 0;
+}
+
+.hours-card {
+    background: white;
+    border-radius: 20px;
+    padding: 30px 25px;
+    height: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.hours-card h4 {
+    font-weight: 600;
+    color: #2c2420;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.hours-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hours-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #f0ebe5;
+}
+
+.hours-list li:last-child {
+    border-bottom: none;
+}
+
+.hours-list .day {
+    font-weight: 500;
+    color: #2c2420;
+}
+
+.hours-list .time {
+    color: #8C5A3C;
+    font-weight: 500;
+}
+
+.street-grid .street-item {
+    background: #F3E9DC;
+    padding: 14px 18px;
+    border-radius: 50px;
+    text-align: center;
+    font-weight: 500;
+    color: #4a3a30;
+    transition: 0.3s;
+}
+
+.street-grid .street-item:hover {
+    background: #C08552;
+    color: white;
+    transform: translateY(-3px);
+}
+
+.map-placeholder {
+    background: #e8ddd0;
+    border-radius: 20px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #8C5A3C;
+    font-size: 1.2rem;
+    font-weight: 500;
+    overflow: hidden;
+}
+
+.map-placeholder iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.contact-icon-sm {
+    width: 40px;
+    height: 40px;
+    color: #000000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.open-bg{
+    background-color: #C08552;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.contact-bg{
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+/* ===== Testimonials – with profile images ===== */
+.say-card {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #C08552;
+    display: block;
+}
+
+.text-color {
+    color: #5f4d3f;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+/* ===== Welcome Section ===== */
+.welcome-section {
+    background: white;
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Decorative top border */
+.welcome-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: white;
+}
+
+/* ===== Left Content ===== */
+.welcome-content {
+    padding-right: 20px;
+}
+
+.welcome-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.6rem, 1.8vw, 1.6rem);
+    font-weight: 700;
+    color: #8C5A3C;
+    margin-bottom: 1.5rem;
+    position: relative;
+    display: inline-block;
+}
+
+.welcome-title::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: #C08552;
+    border-radius: 2px;
+}
+
+.welcome-text {
+    font-size: clamp(1rem, 1.1vw, 1.1rem);
+    line-height: 1.8;
+    color: #4d3e34;
+    margin-bottom: 1.2rem;
+}
+
+.welcome-text:last-of-type {
+    margin-bottom: 2rem;
+}
+
+/* ===== Brand Info ===== */
+.brand-info {
+    margin-bottom: 20px;
+    padding-top: 10px;
+}
+
+.brand-name {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.6rem, 2.8vw, 2.5rem);
+    font-weight: 700;
+    color: #2c2420;
+    letter-spacing: 6px;
+    margin-bottom: 0;
+}
+
+.brand-est {
+    font-size: 0.95rem;
+    color: #8C5A3C;
+    font-weight: 500;
+    letter-spacing: 4px;
+    margin-top: 2px;
+}
+
+/* ===== Tagline ===== */
+.tagline-wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px 20px;
+    padding: 15px 0 5px 0;
+}
+
+.tagline {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.1rem, 1.8vw, 1.6rem);
+    font-weight: 700;
+    color: #8C5A3C;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.tagline-dot {
+    color: #C08552;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+/* ===== Right Image ===== */
+.welcome-image-wrapper {
+    position: relative;
+    padding: 10px;
+}
+
+.welcome-image {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+    border: 4px solid white;
+    box-shadow: 0 20px 50px rgba(44, 36, 32, 0.15);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.welcome-image:hover {
+    transform: scale(1.02);
+    box-shadow: 0 30px 60px rgba(44, 36, 32, 0.2);
+}
+
+/* Decorative accent behind image */
+.image-accent {
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    width: 80px;
+    height: 80px;
+    background: #C08552;
+    border-radius: 20px;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+/* ===== Why Choose Coffee Corner ===== */
+.choose-card {
+    background: #C08552;
+    border-radius: 20px;
+    padding: 18px 25px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    transition: 0.3s;
+    height: 100%;
+    min-height: 70px;
+}
+
+.choose-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.choose-icon {
+    width: 50px;
+    height: 50px;
+    background: #C08552;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+.choose-text {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: white;
+}
+
+/* ===== Contact Form ===== */
+.contact-form-wrapper {
+    background: white;
+    padding: 30px 25px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.contact-form-wrapper .form-control {
+    border: 1px solid #e8ddd0;
+    border-radius: 12px;
+    padding: 12px 18px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.contact-form-wrapper .form-control:focus {
+    border-color: #C08552;
+    box-shadow: 0 0 0 0.2rem rgba(192, 133, 82, 0.2);
+}
+
+.contact-form-wrapper .form-control::placeholder {
+    color: #b8a89b;
+    font-weight: 300;
+}
+
+.btn-submit {
+    background-color: #C08552;
+    color: white;
+    align-self: center;
+    width: 30%;
+    border: none;
+    padding: 14px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-submit:hover {
+    background-color: #A56D42;
+    transform: translateY(-2px);
+}
+
+/* ===== Contact Info & Hours (right column) ===== */
+.contact-info-block{
+    background: white;
+    padding: 30px 25px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+.opening-hours-block {
+    background: #C08552;
+    padding: 30px 25px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+
+
+/* Reuse existing contact-icon-sm, already defined */
+
+
+/* ===== Responsive tweaks ===== */
+@media (max-width: 991.98px) {
+    .contact-form-wrapper,
+    .contact-info-block,
+    .opening-hours-block {
+        padding: 25px 20px;
+    }
+
+    .contact-info-block {
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact-form-wrapper,
+    .contact-info-block,
+    .opening-hours-block {
+        padding: 20px 16px;
+    }
+
+    .btn-submit {
+        font-size: 1rem;
+        padding: 12px;
+    }
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 991.98px) {
+    .choose-card {
+        padding: 16px 22px;
+        min-height: 65px;
+    }
+    
+    .choose-icon {
+        width: 46px;
+        height: 46px;
+        font-size: 18px;
+    }
+    
+    .choose-text {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .choose-card {
+        padding: 15px 20px;
+        min-height: 60px;
+        gap: 16px;
+    }
+    
+    .choose-icon {
+        width: 42px;
+        height: 42px;
+        font-size: 17px;
+    }
+    
+    .choose-text {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .choose-card {
+        padding: 12px 16px;
+        min-height: 55px;
+        gap: 14px;
+    }
+    
+    .choose-icon {
+        width: 38px;
+        height: 38px;
+        font-size: 15px;
+    }
+    
+    .choose-text {
+        font-size: 0.9rem;
+    }
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 991.98px) {
+    .welcome-section {
+        padding: 60px 0;
+    }
+
+    .welcome-content {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .welcome-title::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .tagline-wrapper {
+        justify-content: center;
+    }
+
+    .brand-info {
+        text-align: center;
+    }
+
+    .image-accent {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .welcome-section {
+        padding: 50px 0;
+    }
+
+    .welcome-title {
+        font-size: clamp(1.8rem, 5vw, 2.5rem);
+    }
+
+    .brand-name {
+        letter-spacing: 4px;
+    }
+
+    .tagline-wrapper {
+        gap: 8px 14px;
+    }
+
+    .tagline-dot {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .welcome-section {
+        padding: 40px 0;
+    }
+
+    .welcome-title::after {
+        width: 40px;
+    }
+
+    .brand-name {
+        letter-spacing: 2px;
+        font-size: 1.4rem;
+    }
+
+    .brand-est {
+        letter-spacing: 2px;
+        font-size: 0.8rem;
+    }
+
+    .tagline-wrapper {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .tagline-dot {
+        display: none;
+    }
+
+    .welcome-image {
+        max-height: 300px;
+    }
+}
+
+/* ===== Responsive adjustments ===== */
+@media (max-width: 991.98px) {
+    .testimonial-card {
+        padding: 20px 16px;
+    }
+    
+    .say-card {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .testimonial-card .customer-name {
+        font-size: 1rem;
+    }
+    
+    .text-color {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .testimonial-card {
+        padding: 18px 14px;
+    }
+    
+    .say-card {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .testimonial-card .customer-name {
+        font-size: 0.95rem;
+    }
+    
+    .text-color {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .testimonial-card {
+        padding: 16px 12px;
+    }
+    
+    .say-card {
+        width: 40px;
+        height: 40px;
+        border-width: 2px;
+    }
+    
+    .testimonial-card .customer-name {
+        font-size: 0.9rem;
+    }
+    
+    .testimonial-card .stars {
+        font-size: 0.85rem;
+    }
+    
+    .text-color {
+        font-size: 0.82rem;
+    }
+}
