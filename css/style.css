@@ -255,6 +255,39 @@ body {
     color: #C08552;
 }
 
+/* Contact form feedback */
+.contact-status {
+    min-height: 24px;
+    margin-bottom: 12px;
+    font-weight: 600;
+    display: none;
+}
+
+.contact-status.show {
+    display: block;
+}
+
+.contact-status.success {
+    color: #1f7a3f;
+}
+
+.contact-status.error {
+    color: #b42318;
+}
+
+.contact-status.loading {
+    color: #8c5a3c;
+}
+
+.btn-submit:disabled {
+    opacity: 0.8;
+    cursor: wait;
+}
+
+.btn-submit .spinner-border {
+    vertical-align: middle;
+}
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .hero-section {
@@ -394,7 +427,7 @@ body {
     margin-top: 8px;
 }
 
-/* card page about */
+/* ===== Testimonials – updated ===== */
 
 .testimonial-card {
     background: white;
@@ -418,7 +451,7 @@ body {
 }
 
 .testimonial-card .stars {
-    color: #C08552;
+    color: #d4a373;
     font-size: 1rem;
     letter-spacing: 2px;
 }
@@ -451,7 +484,7 @@ body {
 /* ===== Contact‑page specific ===== */
 .contact-hero {
     height: 50vh;
-    background: url('../image/contactus.png') no-repeat center center/cover;
+    background: url('../image/about_bg_img.png') no-repeat center center/cover;
     position: relative;
 }
 
